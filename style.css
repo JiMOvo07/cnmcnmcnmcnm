@@ -49,6 +49,22 @@ body {
   background: white;
 }
 
+.event-card.with-badge {
+  position: relative;
+  padding-top: 48px;
+}
+
+.badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #1f5d78;
+  color: white;
+  font-size: 14px;
+}
+
 .event-card h2 {
   margin-top: 0;
 }
