@@ -58,3 +58,14 @@ body {
   border-radius: 16px;
   background: white;
 }
+.event-card {
+  transition:
+    transform .25s,
+    box-shadow .25s;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 14px 28px rgba(16, 42, 67, .18);
+}
