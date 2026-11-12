@@ -3,36 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript 練習</title>
+  <title>終極密碼</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 
-<body class="calculator-page">
+<body class="game-page">
 
  <main class="app">
-  <p class="eyebrow">任務 2</p>
-  <h1>四則運算</h1>
+  <p class="eyebrow">猜數字遊戲</p>
+  <h1>終極密碼</h1>
+  <p>請猜出 1 到 100 之間的終極密碼。</p>
 
-  <div class="number-grid">
-    <div class="field">
-      <label for="number-a">數字 A</label>
-      <input id="number-a" type="number" value="12">
-    </div>
-    <div class="field">
-      <label for="number-b">數字 B</label>
-      <input id="number-b" type="number" value="3">
-    </div>
+  <p id="range" class="range" aria-live="polite">1 ～ 100</p>
+
+  <div class="field">
+    <label for="guess">輸入你的猜測</label>
+    <input id="guess" type="number" min="1" max="100" step="1" inputmode="numeric">
   </div>
 
-  <div id="operator-buttons" class="button-row">
-    <button data-op="add">加法</button>
-    <button data-op="subtract">減法</button>
-    <button data-op="multiply">乘法</button>
-    <button data-op="divide">除法</button>
+  <div class="button-row">
+    <button id="guess-button" type="button">猜！</button>
+    <button id="reset-button" class="secondary" type="button">重新開始</button>
   </div>
 
-  <p id="result" class="message">請選擇運算</p>
+  <p id="message" class="message" role="status" aria-live="polite">請輸入第一個數字</p>
+  <p id="attempts" class="stats">已猜 0 次</p>
 </main>
 
 </body>
