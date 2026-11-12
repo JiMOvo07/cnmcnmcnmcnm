@@ -1,114 +1,41 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="zh-Hant">
-
-
 <head>
-
   <meta charset="UTF-8">
-
-  <!-- 任務 1 會在這裡加入 viewport -->
-
-  <title>W07 基本網頁</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript 練習</title>
   <link rel="stylesheet" href="style.css">
-
+  <script src="script.js" defer></script>
 </head>
-
 
 <body>
 
+ <main class="app">
+  <p class="eyebrow">任務 2</p>
+  <h1>四則運算</h1>
 
-  <!-- ======================================== -->
-  <!-- header 開始                             -->
-  <!-- ======================================== -->
+  <div class="number-grid">
+    <div class="field">
+      <label for="number-a">數字 A</label>
+      <input id="number-a" type="number" value="12">
+    </div>
+    <div class="field">
+      <label for="number-b">數字 B</label>
+      <input id="number-b" type="number" value="3">
+    </div>
+  </div>
 
+  <div id="operator-buttons" class="button-row">
+    <button data-op="add">加法</button>
+    <button data-op="subtract">減法</button>
+    <button data-op="multiply">乘法</button>
+    <button data-op="divide">除法</button>
+  </div>
 
-  <header class="site-header">
-
-    <a class="logo" href="#">城市散步</a>
-
-    <nav class="site-nav">
-
-      <a href="#events">活動</a>
-
-      <a href="#signup">報名</a>
-
-    </nav>
-
-  </header>
-
-
-  <!-- header 結束 -->
-
-
-
-  <main>
-
-
-    <!-- hero 開始 -->
-
-
-    <section class="hero">
-
-      <div class="hero-content">
-
-        <p>WEEKEND WALKING TOUR</p>
-
-        <h1>週末城市散步</h1>
-
-        <p>先完成基本內容，再逐步加入 RWD 與 CSS 動畫。</p>
-
-      </div>
-
-    </section>
-
-
-    <!-- hero 結束 -->
-
-
-
-    <!-- event-list 開始 -->
-
-
-    <section id="events" class="event-list">
-
-      <article class="event-card">
-
-        <h2>老街散步</h2>
-
-        <p>走訪迪化街，認識街屋故事。</p>
-
-      </article>
-
-
-      <article class="event-card">
-
-        <h2>河岸夕陽</h2>
-
-        <p>沿著河濱散步，欣賞城市日落。</p>
-
-      </article>
-
-
-      <article class="event-card">
-
-        <h2>市場早餐</h2>
-
-        <p>從在地早餐開始認識市場。</p>
-
-      </article>
-
-    </section>
-
-
-    <!-- event-list 結束 -->
-
+  <p id="result" class="message">請選擇運算</p>
+</main>
 
   </main>
 
-
 </body>
-
-
 </html>
