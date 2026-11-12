@@ -66,7 +66,6 @@ function renderGame() {
 guessButton.addEventListener("click", function () {
   if (finished) return;
   checkGuess();
-  input.select();
 });
 
 resetButton.addEventListener("click", initializeGame);
